@@ -1,0 +1,84 @@
+Participants:
+- s354405, Christer-Daniel Phan Ton
+- s364573, Alexander Paulsen
+- s389770, Percy Gabriel Bjørkli
+
+Time:
+18:00 - 19:18
+
+Writers
+- Christer-Daniel Phan Ton
+
+Agenda:
+Update each other on problem plan outlines and progress, and discussion the plans
+
+
+
+
+
+Meeting Notes:
+
+We will start koding our problems individually till next meeting on 09.10.2024, and present it to each other.
+
+Alexander talked about a problem he encountered with downloading the data from yahoo finance for problem 2.
+Could download in JSON file.
+-> Convert
+-> Ask TA for help
+
+Prior to meeting, Percy introduced his plan for problem 4 through text messaging:
+Plan for evoAI:
+
+Lære meg Taxi-v3 environment, bli kjent: https://gymnasium.farama.org/environments/toy_text/taxi/#taxi (1 uke)
+Visualisere grid (tror det er enkelt, ser det er flere som har gjort de tidligere) (1uke)
+Lære eg basic Q-learning algo, og implementere det til Taxi-v3 (2uker)
+Tune hyperparametere som LR, discount factor og exploration strategy. (1uke)
+Evaluere resultatene og plotte rewards over tid. og sammenligne performance med random vs heuristic-based policy
+Så prøve andre RL algoritmer som SARSA, DEPP Q-Networks, policy gradient methods, evt andre (2 uker)
+Lage rapport(1uke)
+
+During the meeting Percy mentioned that he found a lot of material on similar problems and that implementing the problem should go well.
+If it went as planned Percy could help with the other problems.
+
+Christer-Daniel showed of a plan for how to solve problem 3
+Objective: Compare ACO and PSO in solving VRPTW
+	- Minimize total travel distance
+	- While making sure deliveries are done within given time windows
+
+	1. Research
+		- Vehicle Routing Problem with Time Windows
+		- Ant Colony Optimization
+		- Particle Swarm Optimization
+	2. Download dataset
+		a. Quickly glance over and note datatypes and what it contains
+	3. Develop constraints and objectives based around the dataset
+	4. Plan algorithm implementations
+		a. Clearly define constraints
+		b. The objective function that minimizes total travel distance
+		c. How to penalizing violations of time windows
+	5. Implement ACO and PSO
+		a. The one we are most familiar with / confident in first
+	6. Write README file for how to run the algorithms and how to test them
+	7. Run each algorithm on the C101.txt dataset and document the result
+	8. Compare the results
+		a. Total distance traveled
+		b. Number of time windows violated
+		c. Time taken by each algorithm to converge to a solution
+	9. Make visualizations of the comparisons
+	10. Report Writing
+		i. Methodology
+			a. Describe problem formulation 
+			b. Implementation details for ACO and PSO
+		ii. Result
+			a. Present outcomes of the algorithms
+			b. Include route visualizations
+			c. Include performance metrics
+		iii. Discussion
+			a. Analyze the strengths and weaknesses of ACO and PSO in solving VRPTW
+		iv. Conclusion
+			b. Summarize the finings
+			c. Suggest potential improvements or future work
+
+	i. Ensure well-documented code
+Ensure run instructions
+
+Christer-Daniel wished for more time as he did not understand swarm yet, which is the topic for next weeks lecture, so next meeting was planned for 09.10.2024
