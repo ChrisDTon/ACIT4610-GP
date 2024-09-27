@@ -4,7 +4,7 @@ Participants:
 - s389770, Percy Gabriel Bjørkli
 
 Time:
-19:00 - 
+18:00 - 19:18
 
 Writers
 - Christer-Daniel Phan Ton
@@ -17,3 +17,25 @@ Update each other on problem plan outlines and progress, and discussion the plan
 
 
 Meeting Notes:
+We will start koding our problems individually till next meeting on 09.10.2024, and present it to each other.
+
+Alexander talked about a problem he encountered with downloading the data from yahoo finance for problem 2.
+Could download in JSON file.
+-> Convert
+-> Ask TA for help
+
+Prior to meeting, Percy introduced his plan for problem 4 through text messaging:
+Plan for evoAI:
+
+Lære meg Taxi-v3 environment, bli kjent: https://gymnasium.farama.org/environments/toy_text/taxi/#taxi (1 uke)
+Visualisere grid (tror det er enkelt, ser det er flere som har gjort de tidligere) (1uke)
+Lære eg basic Q-learning algo, og implementere det til Taxi-v3 (2uker)
+Tune hyperparametere som LR, discount factor og exploration strategy. (1uke)
+Evaluere resultatene og plotte rewards over tid. og sammenligne performance med random vs heuristic-based policy
+Så prøve andre RL algoritmer som SARSA, DEPP Q-Networks, policy gradient methods, evt andre (2 uker)
+Lage rapport(1uke)
+
+During the meeting Percy mentioned that he found a lot of material on similar problems and that implementing the problem should go well.
+If it went as planned Percy could help with the other problems.
+
+Christer-Daniel showed of a plan for how to solve problem 3
