@@ -17,6 +17,7 @@ Update each other on problem plan outlines and progress, and discussion the plan
 
 
 Meeting Notes:
+
 We will start koding our problems individually till next meeting on 09.10.2024, and present it to each other.
 
 Alexander talked about a problem he encountered with downloading the data from yahoo finance for problem 2.
@@ -39,3 +40,45 @@ During the meeting Percy mentioned that he found a lot of material on similar pr
 If it went as planned Percy could help with the other problems.
 
 Christer-Daniel showed of a plan for how to solve problem 3
+Objective: Compare ACO and PSO in solving VRPTW
+	- Minimize total travel distance
+	- While making sure deliveries are done within given time windows
+
+	1. Research
+		- Vehicle Routing Problem with Time Windows
+		- Ant Colony Optimization
+		- Particle Swarm Optimization
+	2. Download dataset
+		a. Quickly glance over and note datatypes and what it contains
+	3. Develop constraints and objectives based around the dataset
+	4. Plan algorithm implementations
+		a. Clearly define constraints
+		b. The objective function that minimizes total travel distance
+		c. How to penalizing violations of time windows
+	5. Implement ACO and PSO
+		a. The one we are most familiar with / confident in first
+	6. Write README file for how to run the algorithms and how to test them
+	7. Run each algorithm on the C101.txt dataset and document the result
+	8. Compare the results
+		1) Total distance traveled
+		2) Number of time windows violated
+		3) Time taken by each algorithm to converge to a solution
+	9. Make visualizations of the comparisons
+	10. Report Writing
+		i. Methodology
+			1) Describe problem formulation 
+			2) Implementation details for ACO and PSO
+		ii. Result
+			1) Present outcomes of the algorithms
+			2) Include route visualizations
+			3) Include performance metrics
+		iii. Discussion
+			1) Analyze the strengths and weaknesses of ACO and PSO in solving VRPTW
+		iv. Conclusion
+			1) Summarize the finings
+			2) Suggest potential improvements or future work
+
+	i. Ensure well-documented code
+Ensure run instructions
+
+Christer-Daniel wished for more time as he did not understand swarm yet, which is the topic for next weeks lecture, so next meeting was planned for 09.10.2024
