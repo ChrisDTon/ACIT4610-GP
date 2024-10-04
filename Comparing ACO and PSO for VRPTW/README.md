@@ -6,5 +6,6 @@
   - Customer number 1 has no demand, ready time, or service time
   - Due date for customer no.1 is closing hours and all vehicles must be back to depot before then
 - Dataset uses bases time from start and a value of 1 is equal to 1 minute
+  - Deliveries in dataset is for a single day
   - Due date of 1236 is in 20.6 hours from start
   - Due date of 967 is in 16.1 hours from start
