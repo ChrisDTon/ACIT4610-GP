@@ -34,13 +34,15 @@ Dataset has been downloaded and looked over.
     - YCORD.
   - The amount of goods / demand
     - DEMAND
+  - Vehicle capacity
+    - 200
+  - Amount of vehicles
+    - 25
   - Service time
     - SERVICE TIME
   - Time window
     - READY TIME
     - DUE DATE
-  - Vehicle capacity
-    - Missing from dataset**
 
 Update on problem 4
 
