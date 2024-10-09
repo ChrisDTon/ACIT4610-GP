@@ -18,3 +18,29 @@ Present coding progress on each of the problems, discuss and teach each other, a
 
 Meeting Notes:
 
+Update on problem 2
+
+
+
+Update on problem 3
+Lecture on swarm was moved to 11.10.2024, and so Christer-Daniel has yet to comprehend how PSO and ACO properly works, and implementing them will be put off till next week.
+Dataset has been downloaded and looked over.
+- Dataset is made up entirely of double or float datatypes (numerical datatype with a single decimal)
+- We believe the time is relative to start and that 1 = 1 minute
+- The longest time from start is 20.6 hours and as such we assume the problem is for one days delivery
+- Details we've been able to extract from the dataset that is needed for PSO and ACO
+  - Location data
+    - XCORD.
+    - YCORD.
+  - The amount of goods / demand
+    - DEMAND
+  - Service time
+    - SERVICE TIME
+  - Time window
+    - READY TIME
+    - DUE DATE
+  - Vehicle capacity
+    - Missing from dataset**
+
+Update on problem 4
+
