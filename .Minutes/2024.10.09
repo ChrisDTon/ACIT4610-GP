@@ -19,6 +19,13 @@ Meeting Notes:
 
 Update on problem 2
 
+Datasets:
+- Found datasets from yahoo finance, but had to use their api to extract the data. Convertet the data from json to csv. 
+- Reformatted the csv file to contain onlt monthly returns.
+- Made a covariance matrix based on all the monthly returns of each stock. 
+
+Further tasks:
+- Implement basic EP for maximizing expected return.
 
 
 Update on problem 3
