@@ -9,3 +9,11 @@
   - Deliveries in dataset is for a single day
   - Due date of 1236 is in 20.6 hours from start
   - Due date of 967 is in 16.1 hours from start
+
+# ACO
+- Algorithm based on the food gathering and search behavior of a colony of ants
+- All ants leave behind pheramon that evaporates, commonly traveled routes will have their pheramon replenished and reinforced
+
+# PSO
+- Algorithm inspired by the flocking behavior of birds, and schooling behavior of fish
+- Individual keeps track of its neighbors and keep distance / follow
