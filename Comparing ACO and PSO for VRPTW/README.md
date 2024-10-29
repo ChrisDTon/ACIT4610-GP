@@ -12,6 +12,7 @@
 
 # c101.txt
 - c101 was formated to keep data in rows / a single line rather than columns to be more easibly used with python lists
+- Was sourced from [...]
 
 # ACO
 - Algorithm based on the food gathering and search behavior of a colony of ants
