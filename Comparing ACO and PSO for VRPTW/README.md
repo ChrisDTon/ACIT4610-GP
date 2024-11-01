@@ -10,6 +10,10 @@
   - Due date of 1236 is in 20.6 hours from start
   - Due date of 967 is in 16.1 hours from start
 
+# c101.txt
+- c101 was formated to keep data in rows / a single line rather than columns to be more easibly used with python lists
+- Was sourced from [...]
+
 # ACO
 - Algorithm based on the food gathering and search behavior of a colony of ants
 - All ants leave behind pheramon that evaporates, commonly traveled routes will have their pheramon replenished and reinforced
