@@ -1,0 +1,102 @@
+Participants:
+- s354405, Christer-Daniel Phan Ton
+- s364573, Alexander Paulsen
+- s389770, Percy Gabriel Bjørkli
+
+Time:
+13:00 - 14:30
+
+Writers
+- Christer-Daniel Phan Ton
+
+Agenda:
+Read assignement, and decide on which three of the four problems to implement
+
+
+
+
+
+Meeting Notes:
+
+Update on problem 2
+
+
+
+Update on problem 3
+
+Working implementations of ACO and PSO for VRPTW solomon c101 have been made and uploaded to the github
+ACO:
+- New iteration of ACO might be made for better sorted / less convoluted convoluted
+- Tries to use every available vehicle instead of minimizing the number of vehicles
+- Step by step how it works:
+    - __init__ that stores all global variables, c101 data, and fine tuning variables
+    - Tuning
+        - Many of the __init__ variables are defined by what is passed in, 
+        and as such aco can be redefined before running aco.run()
+            - They do have initial values tho, so if one is missed in the redefining it will still work 
+    - run()
+        - Executes the ACO algorithm
+        - For loop that runs for as many iterations specified
+            - Calls / executes self.construct_solution() and saves the 
+            solutions, 
+            best_cost_this_iteration, 
+            current_times, 
+            best_missed_time_windows_this_iteration
+        - After for loop is done, the variables saved will be used to generate print statements that tells us how the ACO performed
+    - construct_solution()
+        - The function that constructs all the solutions in an iteration
+        - Has for loop that runs as many times as we have ants
+            - Initializes variables
+                - Routes as many as we have vehicles (a list)
+                - Capacity to 0 for as vehicles we have (a list)
+                - current_time to 0 for as many vehicles we have (a list)
+                - visited_customers set that we will use to track which customers have been visited
+                    - A local variable all vehicles can access
+                    - To be used so that a customer is not visited multiple times in a given solution
+                - unvisited_customers
+                    - inverse of visited customers for similar use
+            - while statement that is continues till all customers have been visited
+                - Reliant on the unvisited_customers not being empty
+                - for loop that runs for as many vehicles we have
+                    - An if statement that stops the loop if there are no more customers to visit
+                        - Handles error case
+                    - Calls select_next_customer() to decide which customer the vehicle should visit
+                        - If select statement gives None, there is no more customers this vehicle can visit and we use an if statement to skip over the loop / vehicle
+                        - If there are customer it will then be added to the vehicles route, visited_customers set, and removed from the unvisted_customers set
+                            - In addition we update the vehicles capacity and current_time to reflect the load it would have to carry to utilize the route and the time it would take to arrive at the customers
+        - Another for loop but this one runs for as many vehicles we have
+            - Adds depot to the end of the route for every vehicle
+            - Only does this if the vehicle actually visited customers
+        - Adds the generated routes by the for loop to a list called solutions, that will be part of the return statement, and used in run
+        - Update the total_cost which is a variable to keep track of the cost of a solution
+            - Calls calculate_route_cost and passes in
+                - The current route
+                - Corresponding vehicle
+            - Takes the first value returned from calculate_route_cost and summerizes
+        - Adds penalty for unused vehicles
+            - Might need to be removed as we might inversly want to minimize the amount of vehicle usage instead
+        - Checks how many time windows were missed in current solution and saves it in variable
+        - Adds penalty for missed customers
+        - Adds reward for visiting all customers
+        - Updates best_cost_this_iteration
+            - A variable that keeps track of what solution in a given iteration has the best cost
+            - Used in the next part
+        - Updates global
+            - Global variables that keeps track of
+                - Best cost of all solutions
+                - Best solution of all solutions 
+                - A tracker of how many time windows were missed by the best solution
+        - Returns
+            - solutions, which are all the vehicle routes created in this iteration
+            - best_cost_this_iteration, which is the cost of the best solution found in this iteration
+            - current_time, which is the end time of all the vehicles in iteration
+            - best_missed_time_windows_this_iteration, which tracked the amount of time window violations the best solution from this iteration had
+    - select_next_customer()
+        - Called in construct_solution for loop
+            - loop in loop, where the first is for how many ants we have, and the one inside that is for how many vehicles we have
+        - selection method for next customer in a route
+        - For loop that runs for as many customers we have except 0 i.e. depot
+            - If statement
+
+
+            
