@@ -25,6 +25,36 @@ Update on problem 2
 Update on problem 3
 
 Working implementations of ACO and PSO for VRPTW solomon c101 have been made and uploaded to the github
+Different logic has been used for vehicle assignement on ACO and PSO
+ACO tries to use all allow vehicles
+PSO tries to use as few vehicles as possible
+Might rewrite so both uses same logic
+
+Update on problem 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Trash_bin:
 ACO:
 - New iteration of ACO might be made for better sorted / less convoluted convoluted
 - Tries to use every available vehicle instead of minimizing the number of vehicles
