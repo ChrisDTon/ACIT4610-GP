@@ -52,7 +52,7 @@ Step by step:
 - Global best and personal best
 
 # Assumptions
-- Customer no.1 is the depot.
+- Customer no.0 is the depot.
   - The documentation says that customer number 0 is the depot, but in the c101 we found no customer number 0, and as such are using number 1.
   - Customer number 1 has no demand, ready time, or service time
   - Due date for customer no.1 is closing hours and all vehicles must be back to depot before then
