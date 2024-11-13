@@ -44,7 +44,7 @@ Step by step:
 
 ## ACO
 - Algorithm based on the food gathering and search behavior of a colony of ants
-- All ants leave behind pheramon that evaporates, commonly traveled routes will have their pheramon replenished and reinforced
+- All ants leave behind pheramon that evaporates, commonly traveled routes will have their pheramon replenished and reinforced due to distance and later amount of ants traveling them
 
 ## PSO
 - Algorithm inspired by the flocking behavior of birds, and schooling behavior of fish
