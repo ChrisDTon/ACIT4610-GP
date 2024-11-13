@@ -10,7 +10,7 @@ Writers
 - Christer-Daniel Phan Ton
 
 Agenda:
-Read assignement, and decide on which three of the four problems to implement
+Update on problems and set up report writing
 
 
 
@@ -33,6 +33,8 @@ PSO tries to use as few vehicles as possible
 Might rewrite so both uses same logic
 
 Update on problem 4
+
+Everything done except deepq which is optional and having problems with it
 
 Done with all parts except 5
 

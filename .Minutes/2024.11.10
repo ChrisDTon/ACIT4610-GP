@@ -1,0 +1,41 @@
+Participants:
+- s354405, Christer-Daniel Phan Ton
+- s364573, Alexander Paulsen
+- s389770, Percy Gabriel Bjørkli
+
+Time:
+12:00 - 13:30
+
+Writers
+- Christer-Daniel Phan Ton
+
+Agenda:
+Teach other how the other problems work more indepth
+
+
+
+
+
+Meeting Notes:
+
+Update on problem 2
+
+Having problems with an over performing task 2
+Improvement from task 1-5 is visible, except task 2 which is for some reason we have yet to figure out over performing
+All problems have been slow to compute usually taking 10s of minutes, but figured out the problem
+Was using a randomization method that was taking a lot of computational time and power, and replaced with a more performant method 
+both in fitness (due to being based in optimizing for solution problem rather than random) and computational time / power
+
+Update on problem 3
+
+Working implementations of ACO and PSO for VRPTW solomon c101 have been made and uploaded to the github
+Different logic has been used for vehicle assignement on ACO and PSO
+ACO tries to use all allow vehicles
+PSO tries to use as few vehicles as possible
+Might rewrite so both uses same logic
+
+Update on problem 4
+
+Everything done except deepq which is optional and having problems with it
+
+Done with all parts except 5
